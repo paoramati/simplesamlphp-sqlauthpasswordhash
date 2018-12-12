@@ -201,10 +201,10 @@ class sspmod_sqlauthpasswordhash_Auth_Source_SQL extends sspmod_core_Auth_UserPa
                     continue;
                 }
 
-				if ($name === $this->hash_column) {
-					/* Don't add password hash to attributes */
-					continue;
-				}
+		if ($name === $this->hash_column) {
+			/* Don't add password hash to attributes */
+			continue;
+		}
 
                 $value = (string)$value;
 
